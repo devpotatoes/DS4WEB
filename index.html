@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    <body>
+        <div id="msg-layer" hidden="">
+            <p id="msg-text"></p>
+        </div>
+        <DS4WEB-player id="player"></DS4WEB-player>
+        <script src="path/to/DS4WEB.min.js"></script>
+        <script>
+            document.getElementById("player").loadURL("path/to/game.nds");
+        </script>
+    </body>
+</html>
+
+<!-- Enable microphone -->
+<!-- <!doctype html>
+<html>
+<body>
+    <div id="msg-layer" hidden="">
+        <p id="msg-text"></p>
+    </div>
+    <DS4WEB-player id="player"></DS4WEB-player>
+    <script src="path/to/DS4WEB.min.js"></script>
+    <script>
+        var player = document.getElementById("player");
+        player.loadURL("path/to/game.nds", () => {
+            player.enableMicrophone();
+        });
+    </script>
+</body>
+</html> -->
